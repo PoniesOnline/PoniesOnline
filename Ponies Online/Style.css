@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: blue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #00A651;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', Notram;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: lightblue;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #0072BC;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #0072BC;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 200px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+
+  li a:hover, .dropdown:hover .dropbtn {
+      background-color: #0072BC;
+  }
+
+  li.dropdown {
+      display: inline-block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #00A651;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: lightblue;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #0072BC}
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  .resp-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 2.5%;
+  }
+
+
+body {
+  background-image: url('IF/BG.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
